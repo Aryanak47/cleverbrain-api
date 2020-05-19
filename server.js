@@ -27,8 +27,8 @@ app.get("/profile/:id",(req,res)=>{profile.handleProfile(req,res,db)})
 app.put("/image",(req,res)=>{img.handleImage(req,res,db)})
 app.post("/imageUrl",(req,res)=>{img.handleImageUrl(req,res)})
 
-app.listen(process.env.PORT|| 3000,()=>{
-    console.log(`App is running on port ${process.env.PORT}`)
+app.listen(3000,()=>{
+    console.log(`App is running on port`)
 })
 
 
